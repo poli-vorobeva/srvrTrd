@@ -1,7 +1,8 @@
 import * as http from "http";
-import {SocketServer} from "./SocketServer";
+import SocketServer from "./SocketServer.js";
 
-const port = 3000;
+
+const port = process.env.PORT || 3001;
 const requestHandler = (request, response) => {
 	response.end('Serverhi!');
 };

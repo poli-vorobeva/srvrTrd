@@ -1,7 +1,4 @@
-import * as http from "http";
-import {connection} from "websocket";
-
-const websocket = require('websocket')
+import * as websocket from "websocket";
 
 let active = 0
 let connections = []
@@ -82,7 +79,7 @@ let range = {
 	}
 };
 
-export class SocketServer {
+class SocketServer {
 	constructor(server) {
 		const wsServer = new websocket.server({
 			httpServer: server,
@@ -122,3 +119,5 @@ function sendResponse(client, type, stringContent) {
 	};
 	client.sendUTF(JSON.stringify(responseMessage));
 }
+
+export default SocketServer
