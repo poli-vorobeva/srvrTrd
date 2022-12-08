@@ -72,7 +72,7 @@ const usersData = [
 ]
 let timeout = null
 let range = {
-	from: 12,
+	from: 120,
 	to: 0,
 	async * [Symbol.asyncIterator]() {
 		for (let value = this.from; value > this.to; value--) {
