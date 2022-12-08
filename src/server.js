@@ -12,3 +12,15 @@ const socketService = new SocketServer(server)
 server.listen(port, () => {
 	console.log(`server is listening on ${port}`);
 });
+
+//railway.json
+//{
+//   "$schema": "https://railway.app/railway.schema.json",
+//   "build": {
+//     "builder": "NIXPACKS"
+//   },
+//   "deploy": {
+//     "restartPolicyType": "ON_FAILURE",
+//     "restartPolicyMaxRetries": 10
+//   }
+// }
