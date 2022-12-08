@@ -80,7 +80,7 @@ let range = {
 				clearTimeout(timeout)
 				timeout = null
 			}
-			await new Promise(resolve => timeout = setTimeout(resolve, 100));
+			await new Promise(resolve => timeout = setTimeout(resolve, 1000));
 			yield value;
 		}
 	}
